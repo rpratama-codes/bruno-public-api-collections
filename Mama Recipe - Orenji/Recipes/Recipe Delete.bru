@@ -1,0 +1,21 @@
+meta {
+  name: Recipe Delete
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{url}}/recipes/delete
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "recipes_uid" : "b3e9f81c-f932-4ec0-94a3-44acc09227e7"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

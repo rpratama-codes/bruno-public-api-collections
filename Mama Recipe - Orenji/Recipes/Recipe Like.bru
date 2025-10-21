@@ -1,0 +1,21 @@
+meta {
+  name: Recipe Like
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{url}}/recipes/like
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "recipes_uid" : "19d248a7-cc3f-46c5-8bac-62544a32546c"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Recipe Dislike
+  type: http
+  seq: 14
+}
+
+delete {
+  url: {{url}}/recipes/dislike
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "recipes_uid" : "c9221332-3ef8-4631-ab50-161dbe966304"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

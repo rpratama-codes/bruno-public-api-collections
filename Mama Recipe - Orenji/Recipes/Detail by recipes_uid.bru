@@ -1,0 +1,19 @@
+meta {
+  name: Detail by recipes_uid
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url}}/recipes/:receiptUid
+  body: none
+  auth: inherit
+}
+
+params:path {
+  receiptUid: 6ad91414-6013-41b0-9eae-50212486e453
+}
+
+settings {
+  encodeUrl: true
+}

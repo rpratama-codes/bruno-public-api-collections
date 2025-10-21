@@ -1,0 +1,49 @@
+meta {
+  name: Add Recipe
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{url}}/recipes/add
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  recipe-image: @file()
+  title: Bakso Ikan Tengiri Kenyal
+  description: '''
+    Bagi penggemar bakso, wajib nih untuk mencoba bikin bakso yang lebih lezat dan sehat sendiri di rumah. Bakso yang lezat tak harus berbahan dasar daging merah. Kamu bisa memanfaatkan beragam bahan makanan lain yang lebih menggugah selera. Salah satunya yakni ikan. Ada aneka jenis ikan yang bisa digunakan sebagai bahan dasar bakso. 
+    
+    Lantas seperti apa cara membuat bakso ikan? Berikut ada beberapa resep bakso ikan yang tak hanya lezat tetapi juga sehat. Simak baik-baik resepnya di bawah ini ya.
+  '''
+  ingredients: '''
+    ["1 kg daging ikan tengiri",
+    "1 gelas air dingin",
+    "es batu secukupnya, haluskan",
+    "4 butir putih telur",
+    "12 sdm tepung tapioka",
+    "5 siung bawang putih",
+    "4 butir bawang merah goreng dan haluskan",
+    "1 sdt lada",
+    "1 sdt baking powder",
+    "garam dan penyedap rasa secukupnya"]
+  '''
+  steps: '''
+    ["Masukkan daging ikan, garam, penyedap rasa, lada, bawang, air, putih telur dan es batu.",
+    "Aduk semua bahan sampai rata.",
+    "Tambahkan tepung tapioka yang sudah dicampur dengan baking powder.",
+    "Aduk terus adonan sambil dibanting agar mudah dibentuk.",
+    "Panaskan air sampai mendidih, matikan.Bulatkan bakso dan masukkan dalam air mendidih.",
+    "Nyalakan lagi kompor dan masak bakso sampai mengapung.",
+    "Angkat lalu masukkan bakso dalam air es.Tiriskan.",
+    "Bakso ikan siap disajikan dengan kuah lezat."]
+  '''
+  video: https://www.youtube.com/watch?v=iwQPXI4BpuU
+  category: Bakso, Sup
+}
+
+settings {
+  encodeUrl: true
+}

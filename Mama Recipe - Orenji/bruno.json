@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Mama Recipe / Orenji",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Edit Info
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{url}}/user/profile/edit
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "first_name": "{{$randomFirstName}}",
+      "last_name": "{{$randomLastName}}",
+      "phone_number": "088800111000"
+  }
+  
+  // by default using existing Bearer Token that has no expired
+  // Phone Number is String but must have number value, cant use (+) symbol  
+  // ex: 6288800111000
+}
+
+settings {
+  encodeUrl: true
+}

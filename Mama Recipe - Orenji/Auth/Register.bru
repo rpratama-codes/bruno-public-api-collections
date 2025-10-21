@@ -1,0 +1,27 @@
+meta {
+  name: Register
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{url}}/user/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "firstName": "{{$randomFirstName}}",
+      "lastName": "{{$randomLastName}}",
+      "email": "real-email@example.com",
+      "password": "good-password"
+  }
+  
+  // Please use Real Email, Need for verification.
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

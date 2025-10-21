@@ -1,0 +1,20 @@
+meta {
+  name: Update Photo
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{url}}/user/profile/update-photo
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  user-photo: @file()
+  ~: 
+}
+
+settings {
+  encodeUrl: true
+}

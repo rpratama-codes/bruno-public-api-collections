@@ -1,0 +1,26 @@
+meta {
+  name: Search by title
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{url}}/recipes/search?page=1&amount=6&sortBy=date&sort=desc&byMe=true&user_uid=403f3a94-3752-4d8f-a1ce-28fd4f9fd701
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 1
+  amount: 6
+  sortBy: date
+  sort: desc
+  byMe: true
+  user_uid: 403f3a94-3752-4d8f-a1ce-28fd4f9fd701
+  ~title: 
+  ~category: Dishes
+}
+
+settings {
+  encodeUrl: true
+}

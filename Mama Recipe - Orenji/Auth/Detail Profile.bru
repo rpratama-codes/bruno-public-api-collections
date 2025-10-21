@@ -1,0 +1,20 @@
+meta {
+  name: Detail Profile
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/user/profile
+  body: text
+  auth: inherit
+}
+
+body:text {
+  
+  // by default using existing Bearer Token that has no expired
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Get comment by recipe_uid
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{url}}/recipes/:recipeUid/detail/comments
+  body: none
+  auth: inherit
+}
+
+params:path {
+  recipeUid: d1658fc2-32ee-40b9-a074-1ce3e7eca8e3
+}
+
+settings {
+  encodeUrl: true
+}

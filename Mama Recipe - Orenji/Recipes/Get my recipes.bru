@@ -1,0 +1,15 @@
+meta {
+  name: Get my recipes
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{url}}/recipes/getmyrecipe
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
