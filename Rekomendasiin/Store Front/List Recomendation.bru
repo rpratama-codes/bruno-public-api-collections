@@ -1,0 +1,26 @@
+meta {
+  name: List Recomendation
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{url}}/store-front/list-recomendation
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "basePrice": {
+      "min": 2000000,
+      "max": 4000000
+    },
+    "criteria_id": "b"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
